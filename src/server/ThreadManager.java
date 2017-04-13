@@ -3,6 +3,7 @@ package server;
 import java.net.Socket;
 import java.util.Vector;
 
+
 public class ThreadManager {
 	Server_chat chat;
 	Socket socket;

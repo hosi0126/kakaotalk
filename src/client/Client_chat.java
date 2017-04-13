@@ -4,14 +4,14 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.net.Socket;
 
+import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class Client_chat extends JPanel {
+public class Client_chat extends JDialog {
 	JTextField t_input;
 	JTextArea area;
 	JScrollPane scroll;
@@ -46,6 +46,6 @@ public class Client_chat extends JPanel {
 			}
 		});
 		setVisible(false);
-		setPreferredSize(new Dimension(330, 540));
+		setSize(360,590);
 	}
 }

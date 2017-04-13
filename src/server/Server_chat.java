@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.util.Vector;
 
-
+//DB가 가져야할 정보 num/users/내용
 public class Server_chat extends Thread{
 	Socket socket;
 	BufferedReader buffr;

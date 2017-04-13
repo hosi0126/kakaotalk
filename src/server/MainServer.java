@@ -7,14 +7,19 @@ import java.util.Vector;
 
 import javax.swing.JFrame;
 
+import db.DBContainer;
+
 public class MainServer extends JFrame implements Runnable{
 	int port=7777;
 	ServerSocket server;
 	Thread thread;//accept 스레드
 	Socket socket;
 	Vector<ThreadManager> userThread=new Vector<ThreadManager>();//각 유저가 스레드매니저를 갖는다.
+	DBContainer dbContainer;
 	
 	public MainServer() {
+		dbContainer=new DBContainer();//db획득
+		
 		thread=new Thread(this);//accept
 		thread.start();
 		
