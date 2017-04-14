@@ -32,6 +32,8 @@ public class Server_chat extends Thread{
 		
 		try {
 			msg=buffr.readLine();
+			//여기서 판단하기
+			
 			send(msg);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -42,6 +44,7 @@ public class Server_chat extends Thread{
 	public void send(String msg){
 		//서버가 보내주는 것
 		try {
+			//판단해서 보내주기
 			for(int i=0;i<userThread.size();i++){
 				userThread.get(i).chat.buffw.write(msg+"\n");
 				userThread.get(i).chat.buffw.flush();

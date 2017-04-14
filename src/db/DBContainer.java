@@ -12,6 +12,7 @@ import java.util.Vector;
 public class DBContainer {
 	DBManager manager=DBManager.getInstance();
 	Map<Integer, Vector>m_chat=new HashMap<Integer,Vector>();//맵을 너무 쓰고싶었다...☆
+	
 	Connection con;
 	
 	public DBContainer() {
